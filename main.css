@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    margin: 0;
+    text-align: center;
+   
+   font-family: fredoka one;
+   background: #D4EDF4;
+}
+h1{
+    color:#2A2E30;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+.players{
+    background: #2A2E30;
+   max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 50px;
+    height: 300px;
+    box-shadow: 4px 2px 4px rgba(0,0,0,.3);
+  
+}
+.score{
+    color:white;
+    font-size: 28px;;
+}
+div .dice{
+    background: rgb(250, 250, 250);
+    margin-top: 70px;
+    padding: 1.5em 2.1em;
+    border-radius: 5px;
+    color: #2A2E30;
+    font-size: 32px;
+}
+button{
+    margin: 0 auto;
+   margin-top: 30px;
+   width: 180px;
+   padding: 15px 30px;
+   border:none;
+   box-shadow: 4px 2px 4px rgba(0,0,0,.3);
+   border-radius: 5px;
+   font-weight: bold;
+   color:white;
+  
+
+}
+#start-game{
+    
+    background: rgb(28, 28, 83);
+}
+#reset-game{
+    background: #ffaaa5;
+    display: none;
+
+}
+#double-btn{
+    background: #F0394D;
+    margin-top: 10px;
+}
+.active{
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  
+}
+
+.track-wins{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+.wins{
+    background: white;
+   
+    margin: 15px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    overflow-wrap: break-word;
+}
